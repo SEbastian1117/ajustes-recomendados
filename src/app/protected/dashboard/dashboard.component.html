@@ -8,7 +8,7 @@
         </button>
       </mat-toolbar>
 
-      <mat-nav-list >
+      <mat-nav-list  class="catm">
        <div class="log"><img class="img-l" src="/assets/img/imagenes-protected/isonewsvg.svg" alt=""></div>
       </mat-nav-list>
 
@@ -26,9 +26,22 @@
     </mat-sidenav>
     <mat-toolbar class="bgnav">
       <button mat-icon-button class="btnh text-white" (click)="sidenav.toggle()">
-        <mat-icon>menu</mat-icon>
+        <mat-icon>pets</mat-icon>
       </button>
+      <nav class="navbar navbar-light bg-transparent">
+        <div class="container-fluid">
+          <form class="d-flex">
+            <input class="form-control me-2 inputs" type="search" placeholder="what does your pet need" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
       <div class="space"></div>
+      <div class="btng">
+        <button routerLink="my-pets" class="btn">
+            go to registration
+        </button>
+    </div>
       <span  mat-list-item class="bell">
        <mat-icon mat-list-icon class="text-white"><i class="fa-solid fa-bell"></i></mat-icon>
      </span>

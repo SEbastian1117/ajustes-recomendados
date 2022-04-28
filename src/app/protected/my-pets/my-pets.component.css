@@ -137,31 +137,42 @@ label::first-letter{
   height: 350px;
 }
 
-@media screen and (max-width: 700px) {
+
+/* movil */
+@media (max-width: 767px) {
+  .destok{
+    display: none;
+  }
+  .tablet{
+    display: none;
+  }
   .position{
-    position: absolute;
-    left: 33%;
-    top: 20%;
-    width: 300px;
+      position: absolute;
+      left: 15%;
+      top: 20%;
+      z-index: 2;
+      width: 250px;
+      margin-bottom: 50px;
   }
+}
   
-}
 
-@media screen and (max-width: 1115px) {
-  .imgd{
-    position: absolute;
-    left:32%;
-    top: 10%;
-    z-index: 2;
+
+/* tablet */
+@media (max-width: 768px) and (min-width: 990px) {
+  .destok{
+    display: none;
   }
-  .imgd img{
-    width: 200px;
-    height: 200px;
+  .movil{
+    display: none;
   }
 }
-
-@media screen and (max-width: 702px) {
-  .imgd{
+/* escritorio */
+@media (min-width: 991px) {
+  .tablet{
+    display: none;
+  }
+  .movil{
     display: none;
   }
 }
