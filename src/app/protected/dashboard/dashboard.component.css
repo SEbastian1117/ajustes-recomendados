@@ -94,6 +94,22 @@
 .logto::first-letter{
    text-transform: uppercase;
 }
+.positionicon{
+   position: fixed;
+   margin-left: 93%;
+   margin-top: 29%;
+}
+.iconi{
+   position: absolute;
+   left: 93%;
+   top: 37%;
+   width: 90px;
+}
+.iconi:hover{
+   padding: 5px;
+   border-radius: 20px;
+   width: 70px;
+}
 
 
 .bgnav{
@@ -153,9 +169,80 @@ background-image: linear-gradient(67deg, #a7b3ff 0%, #02fff5 100%);
    background-color: #2b2a8787;
 }
 
-@media only screen and (max-width: 1200px){
-   .bg{
-   height: 2000px;
+.logt{
+   margin-left: 10px;
+}
+
+
+.carshopping{
+   border-radius: 40px;
+}
+
+.title-modal{
+   font-family: fredoka one;
+   text-align: center;
+   padding-left: 160px;
+   font-size: 20px;
+   font-weight: bold;
+   text-transform: lowercase;
+   color: #9254C8;
+}
+.title-modal::first-letter{
+   text-transform: uppercase;
+}
+.darrk:hover{
+   color: #00fff7;
+   transition: 1s;
+}
+
+/* tablet */
+@media (max-width: 768px) and (min-width: 990px) {
+   .destok{
+     display: none;
+   }
+   .movil{
+     display: none;
+   }
+ }
+ /* escritorio */
+ @media (min-width: 991px) {
+   .tablet{
+     display: none;
+   }
+   .movil{
+     display: none;
+   }
+ }
+
+ /* movil */
+@media (max-width: 767px) {
+   .destok{
+      display: none;
+    }
+    .tablet{
+      display: none;
+    }
+   .inputs{
+      display: none;
+   }
+   .btn{
+      display: none;
+   }
+   .bgnav{
+      width: 100%;
+   }
+   .spanfont{
+      display: none;
+   }
+   .bgl{
+      width:20%;
    }
 
+   .icondog{
+      width: 40px;
+   }
+   .bg{
+      height: 2000px;
+   }
 }
+   

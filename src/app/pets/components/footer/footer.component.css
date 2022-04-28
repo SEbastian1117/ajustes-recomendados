@@ -1,6 +1,7 @@
 
 footer{
-  background-image: url('/assets/img/footer2.png');
+  background-image: url('/assets/img/footer1.png');
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   font-family: 'Poppins', sans-serif;
@@ -8,15 +9,21 @@ footer{
   padding-top:80px;
 }
 
-
+.topd{
+  margin-bottom: 80px;
+}
 .logo{
   width: 150px;
   height: 150px;
     
 }
+
+.text-foot{
+  color: #9254C8;
+}
   .icon {
     position: relative;
-    background-color: #04040476;
+    background-color: #9254c8a3;
     width: 80px;
     height: 80px;
     margin: 20px;
